@@ -63,11 +63,11 @@ ul {
     font-size: 18px;
     color: #E5E7EB;
 }
-button {
+.sign {
     background: #3882F6;
     border-style: none;
     border-radius: 6px;
-    padding: 5px 15px;
+    padding: 10px 30px;
     color: white;
     margin-top: 10px;
 }
@@ -97,15 +97,17 @@ button {
     align-items: center;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .box-container {
+    width: 200px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
 .box {
-    width: 200px;
+    width: 100%;
     height: 200px;
     border-radius: 6px;
     border: 4px solid #3882F6;
@@ -114,10 +116,128 @@ button {
     align-items: center;
     padding: 10px;
     flex-direction: column;
+    box-sizing: border-box;
 }
 .subtext { 
     max-width: 100%;
     white-space: normal;
     word-wrap: break-word;
     text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #E5E7EB;
+    color: #555;
+
+}
+
+.middle {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    align-items: baseline;
+    justify-content: center;
+}
+.italic {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 25px;
+    /* color: #555; */
+    /* padding-right: 150px; */
+}
+
+.author {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: 900;
+    color: #222;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 60px;
+}
+
+.cta {
+    background-color: #3882F6;
+    border-radius: 6px;
+    padding: 60px 200px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.sign-up {
+    flex-shrink: 0;
+    border-style: none;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.text {
+    margin-right: 100px;
+}
+.action {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.below {
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 30px;
+}
+
+.transparent {
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 40px;
+    padding: 15px;
+}
+
+a:hover {
+    color: #cccccc;
+}
+
+.sign:hover {
+    background: linear-gradient(to right, black, #00008B);
+    border: none;
+    box-shadow: 0 0 12px #1e90ff;
+}
+
+.sign-up:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 51, 0.7);
+    background: linear-gradient(to right, black, #00008B);
+    border: none;
+}
+.quote:hover {
+    background-color: #1F2937;
+}
+
+
+.quote:hover .middle * {
+    color: white;
 }
